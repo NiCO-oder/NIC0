@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Hacker Style</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            position: relative;
+        }
+        .message {
+            display: none;
+            font-size: 1.5em;
+        }
+        .title {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Hey miss me   <span id="name"> just verifying some things please wait...  </span></div>
+        <div class="message" id="thankYouMessage">Email and IP secured thank you may now exit :)</div>
+    </div>
+    <script>
+        setTimeout(function() {
+            
+            setTimeout(function() {
+                document.getElementById('thankYouMessage').style.display = 'block';
+            }, 500); // small delay before showing thank you message
+        }, 10000); // 10 seconds delay
+    </script>
+</body>
+</html>
